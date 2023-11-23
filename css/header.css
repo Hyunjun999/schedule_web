@@ -1,6 +1,7 @@
 :root {
     --light-gray: #f4f4f4;
     --main-blue: #4aa8d8;
+    --dark-gray: #606060;
 }
 * {
     margin: 0;
@@ -21,6 +22,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 5rem;
+    margin: 0 1rem;
 }
 
 a {
@@ -34,7 +36,7 @@ a {
     font-weight: 900;
 }
 
-.sign-container {
+.unsigned {
     display: flex;
 }
 
@@ -51,6 +53,10 @@ a {
     padding: 0 1rem
 }
 
+.hidden {
+    display: none;
+}
+
 @media only all and (min-width: 1200px) {
     .inner {
         max-width: 1200px;
@@ -58,4 +64,39 @@ a {
     html {
         font-size: 12px;
     }
+}
+
+/* dropdown css */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
+
+.dropdown-content #sign-out {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 2;
+    border-radius: 2rem;
+    background-color: var(--light-gray);
+    border: 1px solid var(--dark-gray);
+    cursor: pointer;
+}
+
+.dropdown-content #sign-out:hover {
+    background-color: var(--dark-gray);
+    color: white;
 }
