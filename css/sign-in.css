@@ -1,0 +1,80 @@
+.blue {
+    color: var(--main-blue);
+}
+
+.signin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+main .inner {
+    height: 100%;
+}
+
+/* main {
+    position: relative;
+}
+
+.signin-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.signin-container h1 {
+    font-size: 2.5rem;
+}
+
+.signin-form {
+    width: 80%;
+    max-width: 30rem;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-form input {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border: 2px solid var(--dark-gray);
+    border-radius: 1rem;
+}
+
+#sign-in {
+    padding-left: 0;
+    background-color: var(--main-blue);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#sign-in:hover {
+    color: black;
+}
+
+.signup-container {
+    width: 100%;
+    text-align: center;
+}
+
+#sign-up {
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media only all and (max-width:400px) {
+    html {
+        font-smooth: 9px;
+    }
+}
