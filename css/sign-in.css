@@ -73,8 +73,3 @@ main .inner {
     cursor: pointer;
 }
 
-@media only all and (max-width:400px) {
-    html {
-        font-smooth: 9px;
-    }
-}
