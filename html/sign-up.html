@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hyunjun999" />
+    <meta
+      name="keywords"
+      content="성공일정, 아이젠하워 매트릭스, 일정관리, 업무 분배, 우선순위"
+    />
+    <meta name="description" content="우선순위를 정하고 시간을 절약하세요." />
+    <title>성공 일정</title>
+    <!-- favicon -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <!-- favicon for iphone -->
+    <link rel="apple-touch-icon" href="../img/favicon.ico" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/header.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="container">
+          <div class="title"><a href="http://">성공일정</a></div>
+          <div class="sign-container">
+            <div class="unsigned">
+              <div class="sign-in">
+                <a href="http://">로그인</a>
+              </div>
+              <div class="sign-up"><a href="http://">회원가입</a></div>
+            </div>
+            <div class="signed hidden">
+              <div class="dropdown">
+                <div class="dropdown-btn">
+                  안녕하세요. <span id="nickname">홍길동</span>님!
+                  <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="dropdown-content">
+                  <button id="sign-out">로그아웃</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="inner">
+        <div class="signup-container">
+          <h1>안녕하세요 <span class="blue">성공일정</span>입니다</h1>
+          <div class="signup-form">
+            <input type="text" id="email" placeholder="email" />
+            <div class="email-msg msg">이메일 형식이 올바르지 않습니다.</div>
+            <input type="password" id="pw" placeholder="pw" />
+            <div class="pw-msg msg">
+              영문, 숫자, 특수문자(!@$^&*) 조합 8자 이상 입력
+            </div>
+            <input
+              type="password"
+              placeholder="비밀번호 확인"
+              id="pw-confirm"
+            />
+            <div class="pw-confitm-msg msg">비밀번호가 일치하지 않습니다.</div>
+            <input type="text" placeholder="닉네임" id="nickname" />
+            <div class="nickname-msg msg">
+              한글 또는 영문으로 2-10자로 설정해주세요.
+            </div>
+            <input type="button" value="회원가입" id="signup" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="inner">
+        <div class="footer-container">
+          <div class="author">Developed by 조현준</div>
+          <div class="author-email">Email: hnnxxjnn@gmail.com</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
